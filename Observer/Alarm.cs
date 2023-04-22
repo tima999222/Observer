@@ -2,7 +2,7 @@
 
 namespace Observer
 {
-    public class Alarm : IObservable
+    public class Alarm : IObservable<Alarm>
     {
         List<IObserver<Alarm>> observers = new List<IObserver<Alarm>>();
 

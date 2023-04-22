@@ -1,9 +1,9 @@
 ﻿namespace Observer
 {
-    public interface IObservable
+    public interface IObservable<T>
     {
-        void AddObserver(IObserver<Alarm> alarmObserver);
-        void DeleteObserver(IObserver<Alarm> alarmObserver);
+        void AddObserver(IObserver<T> observer);
+        void DeleteObserver(IObserver<T> observer);
         void Notify();
     }
 }
